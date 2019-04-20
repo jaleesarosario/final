@@ -33,11 +33,11 @@
     </div>
     <div class = metextdiv>
         <p>
-        Jaleesa Rosario is an Icelandic Born Afro Caribbean American modern dancer and mixed media motion artist, who has found a creative passion for<span id="dots">...</span><span id="aboutmore"></span>UX research and HCI agile design with a focus on information architecture, complex systems and computational linguistics.<br>
+        Jaleesa Rosario is an Icelandic Born Afro Caribbean American modern dancer and mixed media motion artist, who has found a creative passion for UX research and HCI agile design with a focus on information architecture, complex systems and computational linguistics.<br>
         <br>Her research is dedicated to the creative (re)organization of HCI systems and AI training methods, in order to cultivate more inclusive NLP environments.<br>
         <br>As an Interaction Designer, Jaleesa has leveraged her passion for creative design thinking to support her career in technology, studying at the University of Michigan at the School of Information.<br>
         <br>Some of her highlights include a feature in Amy Poehlers Smart Girls, live video production for GooglePixel, and the IT development designer for the Brooklyn Museum's Library & Archives... just to name a few.</p>
-        <button onclick="moreMe()" id="myBtn">More</button>
+        <br>
         <h2> Lets Connect</h2>
         <form class="form-inline" action="/action_page.php">
             <label for="name">Name:</label>
@@ -69,21 +69,7 @@
 </footer>
 
 <script>
-function moreMe() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("aboutmore");
-  var btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "More";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Less";
-    moreText.style.display = "inline";
-  }
-}
 $("input[type='button'][name='send']").attr('Send', 'Sent!');
 
 <?php
