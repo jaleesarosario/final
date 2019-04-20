@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/html5rs.css">
+    <link rel="stylesheet" type="text/css" href="css/sitestyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <title>MM</title>
+</head>
+<body class = "bodystyle">
+    <a class="skip-main current topnav" href="mm.html" >Skip to content</a>
+    <header class = "headernav">
+        <div class = "navbar sticky table">
+        <nav>
+            <ul>
+                <li><a href="index.html" class = "topnav">Home</a></li>
+                <li><a href="vv.html" class = "topnav">Videos + Visions</a></li>
+                <li><a href="mm.html" class = "current topnav" id = "mmcolor">Motion + Memories</a></li>
+                <li><a href="about.html" class = "topnav">Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+<main>
+    <section class = "mainheadersection">
+        <h1> Memories are & will always be in motion </h1>
+    </section>
+
+    <section class = "mmsection">
+        <div class = "mmdiv">
+            <div class="mySlides1">
+                <img src="images/IMG_0966.jpg" class = "mmmedia" alt="Close up of yellow rose 1"/>
+            </div>
+            <div class="mySlides1">
+                <video controls>
+                    <source src="videos/black_white_flowers.mp4" id = "bw_flowers" title = "Black and White Flowers">
+                </video>
+            </div>
+            <div class="mySlides1">
+                <img src="images/IMG_0967.jpg" class = "mmmedia" alt="Close up of another yellow rose 2"/>
+            </div>
+        <!-- </div> -->
+    <!-- <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a> -->
+        <!-- <div class = "mmdiv"> -->
+            <div class="mySlides1">
+                <img src="images/IMG_5108.JPG" class = "mmmedia" alt="Candles and a crystal ball 1"/>
+            </div>
+            <div class="mySlides1">
+                <video controls>
+                    <source src="videos/jtree_blessings.mp4" title = "Candles in the wind">
+                </video>
+            </div>
+            <div class="mySlides1">
+                <img src="images/IMG_5109.JPG" class = "mmmedia" alt="Candles and a crystal ball 2"/>
+            </div>
+        <!-- </div>
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a> -->
+        <!-- <div class = "mmdiv"> -->
+            <div class="mySlides1">
+                <img src="images/IMG_8549.jpg" class = "mmmedia" alt="Garden Brunch in Mexico 1"/>
+            </div>
+            <div class="mySlides1">
+                <video controls>
+                    <source src="videos/ancient_com.mp4" id = "tulum" title="Tulum Jungle">
+                </video>
+            </div>
+            <div class="mySlides1">
+                <img src="images/IMG_8550.jpg" class = "mmmedia" alt="Garden Brunch in Mexico 2"/>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </section>
+</main>
+<footer>
+    <nav class = "footernav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vv.html">Visions + Videos</a></li>
+            <li><a href="mm.html" class = "current">Memories + Motion</a></li>
+            <li><a href="about.html">Me</a></li>
+        </ul>
+    </nav>
+</footer>
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+showSlides(1, 0);
+showSlides(1, 0);
+showSlides(1, 0);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
+</script>
+</body>
+</html>
